@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes 
+Relation:     exito
+Instances:    94
+Attributes:   8
+              actividad
+              proximo_accesos
+              proximo_zona_descanso
+              tamanio
+              franquicia
+              proximo_tienda_exitosa
+              precios
+              exitosa
+Test mode:2-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                          Class
+Attribute                    SI     NO
+                         (0.41) (0.59)
+=======================================
+actividad
+  RESTAURANTES               9.0    7.0
+  SALUD_Y_BELLEZA            3.0    9.0
+  SERVICIOS                  3.0    3.0
+  ALIMENTACIÓN              1.0    5.0
+  MODA_Y_COMPLEMENTOS       23.0   31.0
+  DEPORTES_Y_OCIO            1.0    3.0
+  TECNOLOG�?A                5.0    3.0
+  INFANTIL                   1.0    3.0
+  [total]                   46.0   64.0
+
+proximo_accesos
+  NO                        29.0   43.0
+  SI                        11.0   15.0
+  [total]                   40.0   58.0
+
+proximo_zona_descanso
+  SI                        13.0    9.0
+  NO                        27.0   49.0
+  [total]                   40.0   58.0
+
+tamanio
+  MEDIANO                   31.0   29.0
+  PEQUEÑO                   3.0   27.0
+  GRANDE                     7.0    3.0
+  [total]                   41.0   59.0
+
+franquicia
+  SI                        39.0   11.0
+  NO                         1.0   47.0
+  [total]                   40.0   58.0
+
+proximo_tienda_exitosa
+  SI                        11.0   21.0
+  NO                        29.0   37.0
+  [total]                   40.0   58.0
+
+precios
+  BAJOS                      9.0    7.0
+  MEDIOS                    29.0   51.0
+  ALTOS                      3.0    1.0
+  [total]                   41.0   59.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          88               93.617  %
+Incorrectly Classified Instances         6                6.383  %
+Kappa statistic                          0.8697
+Mean absolute error                      0.1593
+Root mean squared error                  0.2597
+Relative absolute error                 33.0217 %
+Root relative squared error             52.9162 %
+Total Number of Instances               94     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.974     0.089      0.881     0.974     0.925      0.953    SI
+                 0.911     0.026      0.981     0.911     0.944      0.953    NO
+Weighted Avg.    0.936     0.052      0.94      0.936     0.937      0.953
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 37  1 |  a = SI
+  5 51 |  b = NO
+
